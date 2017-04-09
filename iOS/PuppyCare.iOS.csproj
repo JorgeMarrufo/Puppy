@@ -95,6 +95,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Resources\BackgroundImages\" />
+    <Folder Include="ViewControllers\" />
+    <Folder Include="TableViews\" />
+    <Folder Include="Custom Views\" />
+    <Folder Include="CoreFiles\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -105,11 +110,23 @@
     <None Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main.cs" />
+    <Compile Include="ViewControllers\HomePage.cs" />
+    <Compile Include="ViewControllers\HomePage.designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableViews\HomePageTableView.cs" />
+    <Compile Include="TableViews\HomePageTableView.designer.cs">
+      <DependentUpon>HomePageTableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\HomeSplitViewController.cs" />
+    <Compile Include="ViewControllers\HomeSplitViewController.designer.cs">
+      <DependentUpon>HomeSplitViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ViewController.cs" />
-    <Compile Include="ViewController.designer.cs">
-      <DependentUpon>ViewController.cs</DependentUpon>
+    <Compile Include="Main.cs" />
+    <Compile Include="MainNavigationController.cs" />
+    <Compile Include="MainNavigationController.designer.cs">
+      <DependentUpon>MainNavigationController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
